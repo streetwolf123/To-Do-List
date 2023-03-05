@@ -7,32 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js" ></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
 
-    <h1>Lista do zrobienia</h1>
-    <section>
+    <div class="flex">
+        <h1 class="header">Lista do zrobienia</h1>
         <form class="form">
-            <div>
-                <h2>Dodaj nowe zadanie</h2>
-            </div>
-            <div>
-                <input type="text" class="form__input-js">
-                <button>Dodaj zadanie</button>
-                <p class="form__paragraph"></p>
-            </div>
-            <div>
-                <h2>Lista Zadań</h2>
-            </div>
-            <div>
-                <ol class="form__list form__list-js">
 
-                </ol>
+                <div class="flex-items">
+
+                    <div class="form__header-border">
+                        <h2 class="form__header-margin">Dodaj nowe zadanie</h2>
+                    </div>
+                    <div class="form__addTask-flex">
+                        <div class="form__addTask-input form__addTask-flexInput">
+                            <input type="text" class="form__input form__input-js form__input-flex" required placeholder="Wpisz nowe zadanie">
+                        </div>
+                        <div class="form__addTask-flexButton">
+                            <button class="form__button-send">Dodaj zadanie</button>
+                        </div>
+                        <div class="form__paragraph-flex">
+                            <p class="form__paragraph"></p>
+                        </div>
+                    </div>
+                </div>
+           
+            <div class="flex-items">
+                <div class="form__header-border">
+                    <h2 class="form__header-margin">Lista Zadań</h2>
+                </div>
+
+                <div class="form__list-div form__list-border">
+                    <ul class="form__list-js form__list-flex form__list-margin"></ul>
+                </div>
             </div>
         </form>
-    </section>
+    </div>
 
 
 </body>

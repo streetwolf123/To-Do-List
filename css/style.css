@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color:rgba(78, 76, 76, 0.145);
+}
+
+.form {
+    margin-top: 0%;
+}
+
+.form__tasks--done {
+    color: rgb(249, 0, 0);
+}
+
+.form__list-js {
+    list-style-type: none;
+
+}
+
+.form__input {
+    height: 35px;
+    width: 80%;
+    margin-top: 0%;
+}
+
+.form__list-margin {
+    /* margin: 20px; */
+}
+

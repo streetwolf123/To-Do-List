@@ -1,0 +1,9 @@
+.form__header-margin {
+    margin-left: 20px;
+
+}
+
+.form__header-border {
+    border-bottom: 2px solid;
+    border-color: rgba(0, 0, 0, 0.206);
+}

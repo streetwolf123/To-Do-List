@@ -34,18 +34,23 @@
 
         for (const task of tasks) {
             taskObject += `
-            <ol 
-            ${task.done ? "style =\"text-decoration: line-through\"" : ""}
+            <li class="form__task form__tasks-flex ${task.done ? "form__tasks--done" : ""} "
             >
+                <div class="li__buttonDone-flex">
+                <button class="task-js js-done buttonDone-flex">Zrobione</button>
+                </div>
+                <div class="li__paragraph-flex">
+                <p class="task-js paragraph-js"> ${task.content}</p>
+                </div>
+                <div class="li__buttonRemove-flex">
+                <button class="task-js js-remove">Usuń</button>
+                </div>
                 
-                <button class="js-done">Zrobione</button>
-                <button class="js-remove">Usuń</button>
-                
-                ${task.content}
-            </ol>
+            </li>
             `;
 
         };
+        
         document.querySelector(".form__list-js").innerHTML = taskObject;
 
         const removeButtons = document.querySelectorAll(".js-remove");

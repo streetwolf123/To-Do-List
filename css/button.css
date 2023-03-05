@@ -1,0 +1,17 @@
+.form__button-send {
+    background-color:rgb(13, 96, 129);
+    color: white;
+    border: none;
+    
+    height: 50px;
+    transition: 550ms;
+    
+  
+}
+
+.form__button-send:hover {
+    height: 65px;
+    background-color:  rgb(9, 134, 165);
+    transform: scale(1)
+};
+
