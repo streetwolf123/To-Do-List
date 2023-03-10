@@ -2,16 +2,39 @@
     background-color:rgb(13, 96, 129);
     color: white;
     border: none;
-    
-    height: 50px;
     transition: 550ms;
-    
-  
+    height: 50%;
+    max-width: 80%;
 }
 
 .form__button-send:hover {
-    height: 65px;
     background-color:  rgb(9, 134, 165);
-    transform: scale(1)
-};
+    transform: scale(1.15);
+}
 
+
+
+.li__buttonRemove {
+    background-color: red;
+    border: 0px;
+    padding: 5%;
+    border-bottom: 1px solid;
+    transition: 300ms;
+}
+
+.li__buttonRemove:hover {
+    background-color: rgb(213, 8, 8);
+    transform: scale(1.2);
+}
+
+.li__buttonDone {
+    background-color: green;
+    border-bottom: 1px solid;
+    padding: 5%;
+    transition: 300ms;
+}
+
+.li__buttonDone:hover {
+    background-color: rgb(7, 114, 7);
+    transform: scale(1.2);
+}

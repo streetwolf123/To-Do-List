@@ -40,6 +40,7 @@ body {
      flex-direction: row;
      justify-content: space-around;
      flex-wrap: wrap;
+     
 
 
  }
@@ -66,9 +67,11 @@ body {
 
  .form__addTask-flexButton {
     flex-grow: 1 ;
+    min-width: 20%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
     
  }
   
@@ -108,13 +111,15 @@ body {
  }
 
  .form__tasks-flex {   
-    border-bottom: 2px solid;
+    border-bottom: 4px solid;
+    border-right: 2px solid;
     border-color: rgba(92, 79, 79, 0.359);
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     min-width: 80%;
     max-width: 90%;
     display: flex; 
     justify-content: space-around;
+    align-items: stretch;
     background-color: rgb(169, 163, 163);
    border-radius: 20px;
    transition: 300ms;
@@ -125,32 +130,43 @@ body {
     transform: scale(1.05);
  }
 
- .li__buttonDone-flex {
-    display: flex;
-    justify-content: center;
-    
-
- }
-
- .li__buttonRemove-flex {
-    display: flex;
-    justify-content: center;
- }
-
-
-.li__paragraph-flex {
-    align-self:  
-}
-
-
-
 
 
 
  .form__list-border {
-    margin: ;
      border-bottom: 2px solid;
      border-color: rgba(78, 76, 76, 0.145);
    
  }
+
+.li__buttonDone-flex {
+   min-width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   
+   
+}
+
+
+.li__paragraph-flex {
+   min-width: 50%;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.li__button {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-basis: 15%;
+   min-width: 25%;
+   max-height: 20%;
+}
+
 

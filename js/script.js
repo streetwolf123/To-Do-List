@@ -36,14 +36,18 @@
             taskObject += `
             <li class="form__task form__tasks-flex ${task.done ? "form__tasks--done" : ""} "
             >
-                <div class="li__buttonDone-flex">
-                <button class="task-js js-done buttonDone-flex">Zrobione</button>
+                <div class="li__buttonDone-flex li__button">
+                <button class="js-done li__buttonDone">
+                <i class="fa-solid fa-check button__i"></i>
+                </button>
                 </div>
                 <div class="li__paragraph-flex">
                 <p class="task-js paragraph-js"> ${task.content}</p>
                 </div>
-                <div class="li__buttonRemove-flex">
-                <button class="task-js js-remove">Usuń</button>
+                <div class="li__buttonRemove-flex li__button">
+                <button class="task-js js-remove li__buttonRemove">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+                </button>
                 </div>
                 
             </li>
