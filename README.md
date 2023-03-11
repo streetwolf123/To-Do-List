@@ -11,7 +11,7 @@ aplikacja została zrobiona przy użyciu flex który pomógł zachować elastycz
 
 ##Link 
 
-[](https://streetwolf123.github.io/To-Do-List.github.io/)
+*[To Do List](https://streetwolf123.github.io/To-Do-List.github.io/)
 
 ##Picture of website
 
